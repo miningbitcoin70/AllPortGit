@@ -408,6 +408,7 @@ body{
 .section3{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width: 70%;
     font-size: 1.2vw;
     margin: 150px auto;
@@ -415,35 +416,40 @@ body{
     justify-content: space-between;
     
     
+    
+    
+    
 }
 
 .section3-left{
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 30%;
+    margin: 0 auto;
+    
 }
 .section3-left-p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #8172D5;
     
 }
 
 .section3-left-imgs{
     display: flex;
     flex-direction: column;
-    justify-content: space-between  ;
+    justify-content: space-between;
+    margin-left: 50px;
+    
+    
 }
 
-.section3-right-p{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 .how-do-I{
-    margin-left: 0;;
     position: absolute;
+    margin-left: 0%;
     top: -60px;
 }
 
@@ -451,21 +457,24 @@ body{
 
 
 .section3-right{
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
+    margin:0 auto;
 }
 
 .section3-right-p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #8172D5;
 }
 
 .section3-right-imgs{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 50px;
 }
 
 

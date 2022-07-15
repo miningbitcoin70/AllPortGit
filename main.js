@@ -150,6 +150,7 @@ data.map((item)=>{
     p2.style.marginTop = "20px"
     let cardBoolean = true;
     img.style.cursor = "zoom-in";
+    p2.style.color = "#69A3A2";
     if(window.innerWidth>=1000){
     card.addEventListener("click",()=>{
         if(cardBoolean == true){

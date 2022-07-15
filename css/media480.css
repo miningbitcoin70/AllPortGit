@@ -1,0 +1,31 @@
+@media(max-width:480px){
+    .section3{
+        font-size: 3vw;
+    }
+
+    .section3-right-imgs{
+        margin-left: 20px;
+        transform: scale(0.8);
+    }
+
+    .section3-left-imgs{
+        margin-left: 20px;
+        transform: scale(0.8);
+    }
+
+    .right-section{
+        display: none;
+        
+    }
+    .left-section{
+        width: 100%;
+    }
+
+    .freedom-statue-text{
+        font-size: 3vw;
+    }
+
+    .account{
+        font-size: 2vw;
+    }
+}
