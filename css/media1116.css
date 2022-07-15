@@ -1,0 +1,44 @@
+@media(max-width:1116px){
+    .header2-ul{
+        width: 100%;
+    }
+
+    .header2-right{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        width: 20px;
+    }
+
+    .search-div{
+        width: 50%;
+    }
+    .search-toggle{
+        width: 80%;
+    }
+
+    .allport{
+        font-size: 3vw;
+    }
+
+    .burger-toggle{
+        display: flex;
+    
+    }
+
+    .freedom-statue-text{
+        font-size: 1.5vw;
+    }
+
+    .date{
+        font-size: 2vw;
+    }
+
+    .right-section-grid{
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+}
