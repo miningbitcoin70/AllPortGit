@@ -416,9 +416,6 @@ body{
     justify-content: space-between;
     
     
-    
-    
-    
 }
 
 .section3-left{
@@ -426,6 +423,10 @@ body{
     justify-content: space-between;
     width: 30%;
     margin: 0 auto;
+    min-width: 300px;
+    padding-left:20px;
+    
+    
     
 }
 .section3-left-p{
@@ -434,6 +435,7 @@ body{
     justify-content: space-between;
     color: #8172D5;
     
+    
 }
 
 .section3-left-imgs{
@@ -441,6 +443,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin-left: 50px;
+    cursor: pointer;
     
     
 }
@@ -461,6 +464,8 @@ body{
     display: flex;
     justify-content: space-between;
     margin:0 auto;
+    min-width: 300px;
+    padding-left: 20px;
 }
 
 .section3-right-p{
@@ -475,6 +480,14 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin-left: 50px;
+    cursor: pointer;
+}
+
+.java-p{
+    background: linear-gradient(to right,black,red);
+    font-size: 3vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 

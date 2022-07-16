@@ -66,11 +66,11 @@ let circle3 = document.querySelector(".circle3")
 let i = 0;
 rightArrow.addEventListener("click",function(){
     img.style.transition = "2s";
-    if(img.style.transition == "scaleX(-1)"){
-        img.style.transition = "scaleX(-1)"
-    }else{
-        img.style.transition = "scaleX(-1)"
-    }
+    // if(img.style.transition == "scaleX(-1)"){
+    //     img.style.transition = "scaleX(-1)"
+    // }else{
+    //     img.style.transition = "scaleX(-1)"
+    // }
     i++;
     if(i==3){
         i=0;
@@ -170,6 +170,8 @@ data.map((item)=>{
 
 
 
+
+
 window.addEventListener("scroll",function () {
     if (document.documentElement.scrollTop >= 300) {
       section2.style.marginLeft = "10%"
@@ -205,5 +207,57 @@ downArrow3.addEventListener("click",()=>{
         job = !job
     }
 })
+
+
+let section3Img = document.querySelectorAll(".section3 img");
+let section3 = document.querySelector(".section3");
+let section3P = ["FIRST I","SECOND II","THIRD III","FORTH IV","FIFTH V","SIXTH VI"];
+let section3Position = [["42%","-100px"],["42%","-50px"],["42%","0"],["60%","-100px"],["60%","-50px"],["60%","0"]]
+let section3Boolean = false;
+let div;
+for(let i = 0; i<section3Img.length; i++){
+        section3Img[i].addEventListener("click",()=>{
+        if(section3Boolean==false){
+        div = document.createElement("div");
+        div.style.borderRadius = "20px"
+        div.setAttribute("class","div")
+        let p = document.createElement("p");
+        p.classList.add("java-p")
+        div.appendChild(p);
+        p.innerHTML = section3P[i];
+        section3.appendChild(div);
+        div.style.backgroundColor = "green";
+        div.style.position = "absolute"
+        div.style.left = section3Position[i][0];
+        div.style.top = section3Position[i][1];
+        p.style.position = "absolute";
+        if(window.innerWidth > 856){
+            div.style.width = "30%";
+            div.style.height = "100px";} 
+            else if(window.innerWidth>500){
+                div.style.width = "50%";
+                div.style.height = "100px";
+                div.style.top = "0px"
+                div.style.left = "20%";
+            }else{
+                div.style.width = "65%";
+                div.style.height = "100px";
+                div.style.top = "0px"
+                div.style.left = "25%";
+            }
+        div.style.display = "flex";
+        div.style.justifyContent = "center"
+        div.style.alignItems = "center"
+        p.style.color = "linear-gradient(to Right,black,red)"
+        section3Boolean=true;
+        }else if(section3Boolean == true){
+            section3Boolean=false;
+            section3.removeChild(div);
+           
+        }
+    })
+}
+
+
 
 
