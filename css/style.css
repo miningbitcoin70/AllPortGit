@@ -327,6 +327,7 @@ body{
 
 .down-arrow-li3{
     background:none !important;
+    z-index: 9000;
 }
 
 .down-arrow-li4{
