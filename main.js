@@ -66,11 +66,7 @@ let circle3 = document.querySelector(".circle3")
 let i = 0;
 rightArrow.addEventListener("click",function(){
     img.style.transition = "2s";
-    // if(img.style.transition == "scaleX(-1)"){
-    //     img.style.transition = "scaleX(-1)"
-    // }else{
-    //     img.style.transition = "scaleX(-1)"
-    // }
+
     i++;
     if(i==3){
         i=0;
@@ -217,7 +213,7 @@ let section3Position = [["42%","-100px"],["42%","-50px"],["42%","0"],["60%","-10
 let section3Boolean = false;
 let div;
 for(let i = 0; i<section3Img.length; i++){
-        section3Img[i].addEventListener("click",()=>{
+        section3Img[i].addEventListener("click",(event)=>{
         if(section3Boolean==false){
         div = document.createElement("div");
         div.style.borderRadius = "20px"
@@ -251,13 +247,22 @@ for(let i = 0; i<section3Img.length; i++){
         div.style.alignItems = "center"
         p.style.color = "linear-gradient(to Right,black,red)"
         section3Boolean=true;
-        }else if(section3Boolean == true){
-            section3Boolean=false;
-            section3.removeChild(div);
+         }else if(event.target.alt=="right arrow"){
+             section3Boolean=false;
+             section3.removeChild(div);
            
-        }
+         }
     })
+    
 }
+
+window.addEventListener("click",(event)=>{
+        
+    if(event.target.alt!="right arrow"){
+        section3Boolean=false;
+        section3.removeChild(div);
+    }
+})
 
 
 let section4Button = document.querySelector(".section4 button");
