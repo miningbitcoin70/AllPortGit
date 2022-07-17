@@ -10,4 +10,27 @@
     .java-p{
         font-size: 5vw;
     }
+
+
+    .footer1 button{
+        background-color: #758BFD;
+        color: white;
+        width: 15%;
+        height: 3vw;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+
+    .footer2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        background-color: #758BFD;
+        width: 100%;
+        color: white;
+        padding: 0 20px;
+        font-weight: bold;
+        font-size: 2vw;
+    }
 }

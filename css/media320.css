@@ -1,0 +1,66 @@
+@media(max-width:320px){
+    .section5{
+        font-size: 4vw;
+    }
+
+
+    .section4-right{
+        height: 200px;
+    }
+
+
+
+    .section6{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .section6 div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        height: 30vw;
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+    
+    .section6 img{
+        width: 25%;
+    }
+    
+    .section6 p:nth-child(2){
+        font-size: 3vw;
+        width: 60%;
+    }
+    
+    .section6 p:nth-child(3){
+        color: #69A3A2;
+        font-size: 2vw;
+        width: 60%;
+    }
+    
+    .people-news{
+        margin-top: 30%;
+        margin-bottom: 50px;
+        font-size: 4vw;
+        margin-left: 10%;
+    }
+
+    .footer2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        background-color: #758BFD;
+        width: 100%;
+        color: white;
+        padding: 0 20px;
+        font-weight: bold;
+        font-size: 2.5vw;
+    }
+}

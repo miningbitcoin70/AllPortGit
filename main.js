@@ -181,6 +181,7 @@ window.addEventListener("scroll",function () {
 
   let downArrow = document.querySelector(".down-arrow-li");
   let jobTools = document.querySelector(".job-tools");
+  let jobToolsLi = document.querySelector(".job-tools-li");
 
 let job = false;
 
@@ -257,6 +258,81 @@ for(let i = 0; i<section3Img.length; i++){
         }
     })
 }
+
+
+let section4Button = document.querySelector(".section4 button");
+let section4 = document.querySelector(".section4-form");
+let cancel = document.querySelector(".cancel");
+let inputs = document.querySelectorAll("input");
+let register = document.querySelector(".register");
+section4.style.display = "none";
+section4Button.addEventListener("click",function(){
+    if(section4.style.display == "none"){
+        section4.style.display = "flex"
+        section4.style.zIndex = 100;
+    } else{
+        section4.style.display = "none"
+    }
+
+})
+
+
+cancel.addEventListener("click",function(){
+    if(section4.style.display == "none"){
+        section4.style.display = "flex"
+        
+    } else{
+        section4.style.display = "none"
+    }
+
+})
+
+register.addEventListener("click",()=>{
+    if(inputs[1].value.length < 6){
+        window.alert("username must includes at least 6 symbol")
+    }else
+    if(inputs[2].value.indexOf("@")<0){
+        window.alert("your email must includes @")
+    }else
+    if(inputs[3].value.length<6){
+        window.alert("your password must includes at least 6 character")
+    }else{
+        window.alert("you are registered succesfully")
+    }
+})
+
+
+let man = document.querySelector(".man");
+man.addEventListener("click",()=>{
+    if(window.innerWidth>=1100){
+    if(man.style.transform!="scale(2)"){
+        leptop.style.transform="scale(1)"
+        leptop.style.zIndex = 0;
+        man.style.zIndex = 1;
+    man.style.transform = "scale(2)"
+    } else if(man.style.transform =="scale(2)"){
+        man.style.transform="scale(1)"
+        man.style.zIndex = 0;
+    }
+}
+})
+
+let leptop = document.querySelector(".leptop");
+leptop.addEventListener("click",()=>{
+    if(window.innerWidth>=1100){
+    if(leptop.style.transform!="scale(1.5)"){
+        man.style.transform="scale(1)"
+        leptop.style.zIndex = 1;
+        man.style.zIndex = 0;
+        leptop.style.transform = "scale(1.5)"
+    } else if(leptop.style.transform =="scale(1.5)"){
+        leptop.style.transform="scale(1)"
+        leptop.style.zIndex = 0;
+    }
+}
+})
+
+
 
 
 

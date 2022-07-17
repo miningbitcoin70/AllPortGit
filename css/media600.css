@@ -1,14 +1,6 @@
-@media(max-width:857px){
-    .section3-right{
-        margin-top: 15px;
-    }
-
-    .section5{
-        font-size: 2vw;
-    }
-
-    .section5-left button{
-        width: 100px;
+@media(max-width:600px){
+    .section4-right{
+        font-size: 3vw;
     }
 
 
@@ -36,7 +28,6 @@
         height: 150px;
     }
     .section5-left-div p{
-        width: 100%;
         margin: 0 auto;
     }
 
@@ -52,16 +43,6 @@
         width: 100px;
     }
 
-    .section5 img{
-        width: 100%;
-    }
-
-    .section5-right{
-        height: 150px;
-        margin-top: 10%;
-        width: 100%;
-    }
-
 
 
 
@@ -69,7 +50,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
     
@@ -85,24 +66,34 @@
     }
     
     .section6 img{
-        width: 25%;
+        width: 15%;
     }
     
     .section6 p:nth-child(2){
-        font-size: 1.8vw;
+        font-size: 2vw;
         width: 60%;
     }
     
     .section6 p:nth-child(3){
         color: #69A3A2;
-        font-size: 1.3vw;
+        font-size: 1.5vw;
         width: 60%;
     }
     
     .people-news{
         margin-top: 30%;
         margin-bottom: 50px;
-        font-size: 1.5vw;
+        font-size: 2vw;
         margin-left: 10%;
+    }
+
+
+    .footer1 button{
+        background-color: #758BFD;
+        color: white;
+        width: 15%;
+        height: 4vw;
+        border-radius: 10px;
+        margin-left: 20px;
     }
 }
